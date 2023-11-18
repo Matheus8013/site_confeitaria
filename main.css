@@ -1,0 +1,107 @@
+.body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.carousel-item img {
+    height: 740px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0;
+    outline: none;
+    border: 2px solid  rgb(128, 166, 220);;
+}
+
+.font {
+    font-family: 'Lobster', sans-serif;
+}
+
+.cor-do-texto {
+    color: rgb(128, 166, 220);
+}
+
+.cor-de-fundo {
+    background-color: #395342;
+}
+
+.navbar-brand {
+    font-family: 'Lobster', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar-brand:hover {
+    color: #fff;
+}
+
+.navbar {
+    background-color: #91c0a275;
+    background-color: rgb(128, 166, 220)
+}
+
+#menu .nav .nav-link.active {
+    background-color: #fff;
+    color: #000;
+    border-radius: 40px 40px 40px 40px;
+}
+
+#menu .nav .nav-link {
+    color: #fff;
+}
+
+.arredondado {
+    border-radius: 40px 40px 40px 40px;
+}
+
+#sobre,
+#cardapio{
+    background-color: rgba(128, 166, 220, 0.097)
+}
+
+#cardapio .nav-link.active {
+    background-color: rgb(128, 166, 220);
+    color: #fff;
+    border-radius: 40px 40px 40px 40px;
+}
+
+#cardapio .nav-link {
+    color: #000
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+form .btn{
+    background-color: rgba(128, 166, 220, 0.097);
+}
+
+form .btn:hover {
+    background-color: rgb(128, 166, 220);
+    color: #fff;
+}
+
+.error {
+    color: red;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+    height: 260px;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1023) {
+    .carousel-item img {
+    height: 540px;
+    }
+}
+
+
+
+

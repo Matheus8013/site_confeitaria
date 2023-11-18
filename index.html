@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confeitaria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <header class="title navbar navbar-expand-lg sticky-top p-4" id="menu">
+        <div class="container">
+            <h1 class="navbar-brand m-0">Ebac Confeitaria</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-center" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-lg-flex pt-2 pt-md-2 pt-lg-0 font">
+                    <li class="nav-item ">
+                        <a href="#sobre" class="nav-link active">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#especialidade" class="nav-link">
+                            <i class="bi bi-suit-heart-fill"></i>
+                            Especialidades
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#cardapio" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Nosso cardápio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                    <li class="nav-item"> 
+                        <div class="d-lg-none">
+                            <input type="search" class="form-control arredondado" placeholder="Pesquisar">
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="d-none d-lg-flex">
+            <input type="search" class="form-control arredondado" placeholder="Pesquisar">
+        </div>
+    </header>
+
+    <div id="main" data-bs-spy="scroll" data-bs-target="#menu" data-bs-smooth-scroll="true">
+        <section id="sobre">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./Img/Slides/Slide-1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./Img/Slides/Slide-2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./Img/Slides/Slide-3.jpg" class="d-block w-100" alt="...">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" class="active" data-bs-target="#carouselExampleFade" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img class="d-block w-100 rounded" src="./Img/Loja.jpg" alt="">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="font">Sobre <span class="cor-do-texto">a loja</span></h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde et quo aspernatur nisi voluptatem explicabo fugiat animi, itaque obcaecati quas earum saepe cum soluta, placeat reprehenderit aperiam tempora, modi fuga!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="especialidade" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center font">Nossas <span class="cor-do-texto">Especialidades</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded" src="./Img/Eventos/Aniversário.jpg" alt="">
+                        <h3 class="fs-4 cor-do-texto font pt-1">
+                            <i class="bi bi-cake2-fill"></i>
+                            Amiversários
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam ea laboriosam totam facere reprehenderit! Officia, saepe consequuntur beatae.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded" src="./Img/Eventos/Casamentos.jpg" alt="">
+                        <h3 class="fs-4 cor-do-texto font pt-1">
+                            <i class="bi bi-heart-fill"></i>
+                            Casamentos
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam ea laboriosam totam facere reprehenderit! Officia, saepe consequuntur beatae.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded" src="./Img/Eventos/Festa.jpg" alt="">
+                        <h3 class="fs-4 cor-do-texto font pt-1">
+                            <i class="bi bi-gift-fill"></i>
+                            Festas
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam ea laboriosam totam facere reprehenderit! Officia, saepe consequuntur beatae.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cardapio" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center font">Nosso <span class="cor-do-texto">Cardápio</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2 ps-md-1 ps-lg-0 font">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#brigadeiros" class="fw-bold text-start nav-link active">Brigadeiros</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#sorvetes" class="fw-bold text-start nav-link text-colored">Sorvete</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bolos" class="fw-bold text-start nav-link text-colored">Bolos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#doces-veganos" class="fw-bold text-start nav-link text-colored">Doces veganos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class="fw-bold text-start nav-link text-colored">Sobremesas</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="brigadeiros">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 pt-sm-1 pt-md-0" src="./Img/Cardápio/Brigadeiros/brigadeiro-1.jpg" alt="Coca-cola">
+                                        <h5 class="cor-do-texto font fw-bold mt-2">Brigadeiro</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Img/Cardápio/Brigadeiros/brigadeiro-1.jpg" alt="Suco">
+                                        <h5 class="cor-do-texto font fw-bold mt-2">Brigadeiro</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Img/Cardápio/Brigadeiros/brigadeiro-1.jpg" alt="Coca-cola">
+                                        <h5 class="cor-do-texto font fw-bold mt-2">Brigadeiro</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Img/Cardápio/Brigadeiros/brigadeiro-1.jpg" alt="Coca-cola">
+                                        <h5 class="cor-do-texto font fw-bold mt-2">Brigadeiro</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Img/Cardápio/Brigadeiros/brigadeiro-1.jpg" alt="Coca-cola">
+                                        <h5 class="cor-do-texto font fw-bold mt-2">Brigadeiro</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Img/Cardápio/Brigadeiros/brigadeiro-1.jpg" alt="Coca-cola">
+                                        <h5 class="cor-do-texto font fw-bold mt-2">Brigadeiro</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="sorvetes">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 pt-sm-1 pt-md-0" src="./Img/Cardápio/Sorvetes/sorvete-2.jpg" alt="Cerveja">
+                                        <h5 class="cor-do-texto font fw-bold mt-2">Sorvete</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Img/Cardápio/Sorvetes/sorvete-2.jpg" alt="Vinho">
+                                        <h5 class="cor-do-texto font fw-bold mt-2">Sorvete</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="bolos">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 pt-sm-1 pt-md-0" src="./Img/Cardápio/Bolos/Bolo-de-chocolate.jpg" alt="Nome da entrada">
+                                        <h5 class="cor-do-texto font fw-bold mt-2">Bolo de chocolate</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Img/Cardápio/Bolos/Bolo-de-chocolate.jpg" alt="Nome da entratada">
+                                        <h5 class="cor-do-texto font fw-bold mt-2">Bolo de chocolate</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Img/Cardápio/Bolos/Bolo-de-chocolate.jpg" alt="Nome da entratada">
+                                        <h5 class="cor-do-texto font fw-bold mt-2">Bolo de chocolate</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Img/Cardápio/Bolos/Bolo-de-chocolate.jpg" alt="Nome da entratada">
+                                        <h5 class="cor-do-texto font fw-bold mt-2">Bolo de chocolate</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="doces-veganos">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 pt-sm-1 pt-md-0" src="./Img/Cardápio/Docs Veganos/Bolo vegano.jpg" alt="Bolo Vegano">
+                                        <h5 class="cor-do-texto font fw-bold mt-2">Bolo Vegano</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Img/Cardápio/Docs Veganos/Bolo vegano.jpg" alt="Salmão">
+                                        <h5 class="cor-do-texto font fw-bold mt-2">Salmão</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Img/Cardápio/Docs Veganos/Bolo vegano.jpg" alt="Bolo Vegano">
+                                        <h5 class="cor-do-texto font fw-bold mt-2">Bolo Vegano</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Img/Cardápio/Docs Veganos/Bolo vegano.jpg" alt="Salmão">
+                                        <h5 class="cor-do-texto font fw-bold mt-2">Bolo Vegano</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Img/Cardápio/Docs Veganos/Bolo vegano.jpg" alt="Bolo Vegano">
+                                        <h5 class="cor-do-texto font fw-bold mt-2">Bolo Vegano</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Img/Cardápio/Docs Veganos/Bolo vegano.jpg" alt="Salmão">
+                                        <h5 class="cor-do-texto font fw-bold mt-2">Bolo Vegano</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="sobremesas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 pt-sm-1 pt-md-0" src="./Img/Cardápio/Sobremesas/Macaroons.jpg" alt="Bolo de chocolate">
+                                        <h5 class="cor-do-texto font fw-bold mt-2">Macaron</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Img/Cardápio/Sobremesas/Macaroons.jpg" alt="Cupcake">
+                                        <h5 class="cor-do-texto font fw-bold mt-2">Macaron</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-5 pd-5" id="fale-conosco">
+            <div class="container">
+                <div class="row">
+                    <h2 class="font cor-do-texto mb-5 text-center">Fale conosco</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold font cor-do-texto">Seu nome</label>
+                                <input type="text" id="nome" name="nome" class="form-control arredondado" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold font cor-do-texto">Seu email</label>
+                                <input type="text" id="email" name="email" class="form-control arredondado" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold font cor-do-texto">Seu telefone (opcional)</label>
+                                <input type="text" id="telefone" name="telefone" class="form-control arredondado" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="textarea" class="form-label fw-bold font cor-do-texto">Sua mensagem</label>
+                                <textarea id="mensagem" name="mensagem" class="form-control arredondado" required></textarea>
+                            </div>
+                            <button type="submit" class="btn font arredondado">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5 ps-5">
+                        <div class="row">
+                            <h3 class="font cor-do-texto fs-4">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes Sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="">
+                                        <i class="bi bi-facebook cor-do-texto"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="">
+                                        <i class="bi bi-instagram cor-do-texto p-2"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="">
+                                        <i class="bi bi-whatsapp cor-do-texto"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="font fs-4 cor-do-texto">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua Teste Exemplo n - 146, Bairro Bootstrap - São Paulo - SP
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./JS/jquery.mask.min.js"></script>
+    <script src="./JS/jquery.validate.min.js"></script>
+    <script src="./JS/messages_pt_BR.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
